@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 수학 노트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>나만의 수학 노트</h1>
+        <nav>
+            <ul>
+                <li><a href="#recent">최근</a></li>
+                <li><a href="#photos">전체 사진</a></li>
+                <li><a href="#notes">전체 메모</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="upload">
+        <h2>메모 & 사진 업로드</h2>
+        <form id="upload-form">
+            <label for="memo">메모 작성:</label>
+            <textarea id="memo" name="memo" rows="4" cols="50"></textarea><br>
+            <label for="image-upload">사진 업로드:</label>
+            <input type="file" id="image-upload" name="image-upload" accept="image/*"><br>
+            <button type="submit" id="upload-button">저장</button>
+        </form>
+    </section>
+    <section id="recent">
+        <h2>최근</h2>
+        <div id="recent-content">
+            <!-- 최근 메모 및 사진이 표시될 부분 -->
+        </div>
+    </section>
+    <section id="photos" class="hidden">
+        <h2>전체 사진</h2>
+        <input type="text" id="photo-search-bar" placeholder="사진 검색...">
+        <div id="photo-content">
+            <!-- 전체 사진이 표시될 부분 -->
+        </div>
+    </section>
+    <section id="notes" class="hidden">
+        <h2>전체 메모</h2>
+        <input type="text" id="note-search-bar" placeholder="메모 검색...">
+        <div id="note-content">
+            <!-- 전체 메모가 표시될 부분 -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
